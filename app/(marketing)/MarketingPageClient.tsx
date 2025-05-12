@@ -93,7 +93,7 @@ export function MarketingPageClient() {
                     <div key={i} className="example-item">
                       <div className="h-24 md:h-32 bg-gray-100 rounded-lg overflow-hidden">
                         <img
-                          src={`/placeholder.svg?&height=200&width=200&text=${item}`}
+                          src={`/placeholder.svg?height=40&width=40text=${item}`}
                           alt={`${item} coloring page`}
                           className="w-full h-full object-cover"
                         />

@@ -584,3 +584,8 @@
     transform: translateX(-100%);
   }
 }
+
+
+button{
+background-color: bg-gradient-to-r from-pastel-pink to-pastel-purple;
+}
