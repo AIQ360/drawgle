@@ -7,7 +7,7 @@ import { SUBSCRIPTION_PLANS } from "@/lib/subscription-plans"
 import { Icons } from "@/components/icons"
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, BookOpen, FileText, Layout, Layers, Palette, Pencil, Star, Zap } from "lucide-react"
+import { ArrowRight, BookOpen, Clock, Calendar, Users, FileText, Layout, Layers, Palette, Pencil, Star, Zap, Globe } from "lucide-react"
 import { useState } from "react"
 
 export function MarketingPageClient() {
@@ -76,12 +76,12 @@ export function MarketingPageClient() {
             </h1>
           </div>
 
-          {/* Fun subheading */}
-          <p className="text-xl md:text-2xl text-center max-w-2xl mx-auto mb-10 font-medium drop-shadow-md">
-            Turn <span className="text-yellow-300 font-bold">ANY</span> idea into a
-            <span className="text-pink-300 font-bold"> MAGICAL </span>
-            coloring adventure with our <span className="text-blue-200 font-bold">SUPER-DUPER</span> AI!
-          </p>
+         {/* Fun subheading */}
+<p className="text-xl md:text-2xl text-center max-w-2xl mx-auto mb-10 font-medium drop-shadow-md">
+  Turn <span className="text-yellow-600 font-bold">ANY</span> idea into a
+  <span className="text-pink-600 font-bold"> MAGICAL </span>
+  coloring adventure with our <span className="text-blue-600 font-bold">SUPER-DUPER</span> AI!
+</p>
 
           {/* Bouncing CTA */}
           <div className="flex justify-center mb-12">
@@ -191,7 +191,7 @@ export function MarketingPageClient() {
             {/* Card 3 */}
             <div className="bg-white rounded-xl p-8 shadow-sm transition-all hover:shadow-md border border-gray-100">
               <div className="w-12 h-12 bg-teal-50 rounded-full flex items-center justify-center mb-6">
-                <Icons.heart className="h-6 w-6 text-teal-500" />
+                <Icons.help className="h-6 w-6 text-teal-500" />
               </div>
               <h3 className="text-xl font-bold mb-3">Turn Special Moments into Keepsakes</h3>
               <p className="text-gray-600">
@@ -654,139 +654,161 @@ export function MarketingPageClient() {
         </div>
       </section>
 
-      {/* Use Cases Section */}
-      <section className="w-full py-16 md:py-24 bg-gray-50">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-            <Badge variant="outline" className="bg-pastel-orange/10 text-primary border-0 px-3 py-1">
-              Use Cases
-            </Badge>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Perfect for Every Situation</h2>
-            <p className="max-w-[700px] text-gray-600 md:text-lg">Discover how Drawgle helps in different scenarios</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm">
-              <div className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-pastel-blue/20 rounded-full flex items-center justify-center">
-                    <Icons.user className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold">For Parents</h3>
-                </div>
-
-                <p className="text-gray-600 mb-6">
-                  Create custom coloring pages that engage your children's imagination and keep them entertained for
-                  hours.
-                </p>
-
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-full bg-green-100 p-1 mt-1 flex-shrink-0">
-                      <Icons.check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-gray-700">
-                      Birthday parties & playdates: Create themed coloring activities
-                    </span>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-full bg-green-100 p-1 mt-1 flex-shrink-0">
-                      <Icons.check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-gray-700">
-                      Rainy days: Generate new activities in seconds when kids are bored
-                    </span>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-full bg-green-100 p-1 mt-1 flex-shrink-0">
-                      <Icons.check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-gray-700">
-                      Family photos: Turn vacation pictures into memorable keepsakes
-                    </span>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-full bg-green-100 p-1 mt-1 flex-shrink-0">
-                      <Icons.check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-gray-700">
-                      Learning at home: Create educational coloring pages that reinforce concepts
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 p-6 border-t">
-                <Link href="/sign-up" passHref>
-                  <Button className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm">Start Creating for Your Kids</Button>
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm">
-              <div className="p-8">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-pastel-green/20 rounded-full flex items-center justify-center">
-                    <Icons.book className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold">For Teachers</h3>
-                </div>
-
-                <p className="text-gray-600 mb-6">
-                  Create educational coloring pages that reinforce learning concepts and engage students in a fun way.
-                </p>
-
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-full bg-green-100 p-1 mt-1 flex-shrink-0">
-                      <Icons.check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-gray-700">
-                      Curriculum support: Generate pages that reinforce what you're teaching
-                    </span>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-full bg-green-100 p-1 mt-1 flex-shrink-0">
-                      <Icons.check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-gray-700">
-                      Class photos: Create end-of-year keepsakes students will treasure
-                    </span>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-full bg-green-100 p-1 mt-1 flex-shrink-0">
-                      <Icons.check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-gray-700">
-                      Special events: Design themed activities for holidays and celebrations
-                    </span>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="rounded-full bg-green-100 p-1 mt-1 flex-shrink-0">
-                      <Icons.check className="h-4 w-4 text-green-600" />
-                    </div>
-                    <span className="text-gray-700">
-                      Classroom management: Create quick activities for early finishers
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 p-6 border-t">
-                <Link href="/sign-up" passHref>
-                  <Button className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm">Create for Your Classroom</Button>
-                </Link>
-              </div>
-            </div>
+{/* Use Cases Section - Modern Redesign */}
+<section className="w-full py-24 md:py-32 bg-white">
+  <div className="container px-4 md:px-6">
+    {/* Section header with minimal styling */}
+    <div className="max-w-3xl mx-auto mb-20">
+      <div className="inline-block h-1 w-12 bg-primary mb-6"></div>
+      <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">How Drawgle transforms creative experiences</h2>
+      <p className="text-xl text-gray-600 leading-relaxed">
+        Our platform adapts to different needs, providing tailored solutions for various creative scenarios.
+      </p>
+    </div>
+    
+    {/* Modern asymmetrical layout */}
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-16 lg:gap-x-12">
+      {/* Left column - For Parents */}
+      <div className="lg:col-span-5 lg:sticky lg:top-24 self-start">
+        <div className="relative">
+          {/* Decorative element */}
+          <div className="absolute -left-4 top-0 h-full w-1 bg-gradient-to-b from-pastel-pink to-pastel-purple"></div>
+          
+          <div className="pl-6">
+            <div className="text-sm uppercase tracking-wider text-primary font-medium mb-4">For Parents</div>
+            <h3 className="text-3xl font-bold mb-6">Spark joy and creativity at home</h3>
+            <p className="text-gray-600 text-lg mb-8">
+              Create custom coloring pages that engage your children's imagination and keep them entertained for hours.
+            </p>
+            
+            <Link href="/sign-up" passHref>
+              <Button className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm px-8">
+                Start creating
+              </Button>
+            </Link>
           </div>
         </div>
-      </section>
+      </div>
+      
+      {/* Right column - Parent use cases */}
+      <div className="lg:col-span-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Use case cards with modern styling */}
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6">
+              <Star className="h-6 w-6 text-primary" />
+            </div>
+            <h4 className="text-xl font-semibold mb-3">Special occasions</h4>
+            <p className="text-gray-600">
+              Create themed coloring activities for birthday parties, playdates, and family gatherings.
+            </p>
+          </div>
+          
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6">
+              <Globe className="h-6 w-6 text-primary" />
+            </div>
+            <h4 className="text-xl font-semibold mb-3">Rainy day activities</h4>
+            <p className="text-gray-600">
+              Generate new activities in seconds when kids are bored or when the weather keeps you indoors.
+            </p>
+          </div>
+          
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6">
+              <Image className="h-6 w-6 text-primary" />
+            </div>
+            <h4 className="text-xl font-semibold mb-3">Family memories</h4>
+            <p className="text-gray-600">
+              Transform vacation pictures and family photos into memorable keepsakes children can color.
+            </p>
+          </div>
+          
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6">
+              <BookOpen className="h-6 w-6 text-primary" />
+            </div>
+            <h4 className="text-xl font-semibold mb-3">Educational support</h4>
+            <p className="text-gray-600">
+              Create educational coloring pages that reinforce learning concepts in a fun, engaging way.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Spacer */}
+      <div className="lg:col-span-12 h-px bg-gray-100 my-8 lg:my-0"></div>
+      
+      {/* Left column - Teacher use cases */}
+      <div className="lg:col-span-7 order-2 lg:order-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Use case cards with modern styling */}
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6">
+              <BookOpen className="h-6 w-6 text-primary" />
+            </div>
+            <h4 className="text-xl font-semibold mb-3">Curriculum support</h4>
+            <p className="text-gray-600">
+              Generate pages that reinforce what you're teaching, from science concepts to historical events.
+            </p>
+          </div>
+          
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6">
+              <Users className="h-6 w-6 text-primary" />
+            </div>
+            <h4 className="text-xl font-semibold mb-3">Class keepsakes</h4>
+            <p className="text-gray-600">
+              Create end-of-year keepsakes from class photos that students will treasure for years to come.
+            </p>
+          </div>
+          
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6">
+              <Calendar className="h-6 w-6 text-primary" />
+            </div>
+            <h4 className="text-xl font-semibold mb-3">Special events</h4>
+            <p className="text-gray-600">
+              Design themed activities for holidays, cultural celebrations, and special school events.
+            </p>
+          </div>
+          
+          <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="w-12 h-12 bg-white rounded-lg shadow-sm flex items-center justify-center mb-6">
+              <Clock className="h-6 w-6 text-primary" />
+            </div>
+            <h4 className="text-xl font-semibold mb-3">Classroom management</h4>
+            <p className="text-gray-600">
+              Create quick activities for early finishers or as calming exercises during transitions.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Right column - For Teachers */}
+      <div className="lg:col-span-5 order-1 lg:order-2 lg:sticky lg:top-24 self-start">
+        <div className="relative">
+          {/* Decorative element */}
+          <div className="absolute -left-4 top-0 h-full w-1 bg-gradient-to-b from-pastel-green to-pastel-blue"></div>
+          
+          <div className="pl-6">
+            <div className="text-sm uppercase tracking-wider text-primary font-medium mb-4">For Teachers</div>
+            <h3 className="text-3xl font-bold mb-6">Enhance learning through creativity</h3>
+            <p className="text-gray-600 text-lg mb-8">
+              Create educational coloring pages that reinforce learning concepts and engage students in a fun, interactive way.
+            </p>
+            
+            <Link href="/sign-up" passHref>
+              <Button className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm px-8">
+                Explore for classrooms
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Pricing Section */}
       <section id="pricing" className="w-full py-16 md:py-24 bg-white">
