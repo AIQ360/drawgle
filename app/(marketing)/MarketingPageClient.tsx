@@ -7,7 +7,7 @@ import { SUBSCRIPTION_PLANS } from "@/lib/subscription-plans"
 import { Icons } from "@/components/icons"
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, BookOpen, Clock, Calendar, Users, FileText, Layout, Layers, Palette, Pencil, Star, Zap, Globe } from "lucide-react"
+import { ArrowRight, BookOpen, Check Clock, Calendar, Users, FileText, Layout, Layers, Palette, Pencil, Star, Zap, Globe } from "lucide-react"
 import { useState } from "react"
 
 export function MarketingPageClient() {
@@ -69,10 +69,11 @@ export function MarketingPageClient() {
           {/* Crayon-style heading */}
           <div className="crayon-container mb-8 md:mb-12">
             <h1 className="crayon-text text-center text-5xl md:text-7xl font-bold leading-tight text-black drop-shadow-lg">
-              Color Your
+              Create Custom  
               <span className="block md:inline relative">
-                <span className="relative z-10 magic-text"> Imagination!</span>
+                <span className="relative z-10 magic-text"> Coloring Pages</span>
               </span>
+              With Drawgle
             </h1>
           </div>
 
@@ -327,88 +328,169 @@ export function MarketingPageClient() {
         </div>
       </section>
 
-      {/* Text to Coloring Page Feature */}
-      <section className="w-full py-16 md:py-24 bg-gray-50">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <div className="flex flex-col justify-center space-y-5">
-              <div className="inline-flex items-center px-3 py-1 text-xs font-medium text-teal-700 bg-teal-50 rounded-full w-fit">
-                Text to Coloring Page
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Your Ideas, Instantly Illustrated</h2>
-              <p className="text-lg text-gray-600 max-w-[600px]">
-                "I need a dinosaur playing soccer" — and just like that, it's ready to print. No more compromising with
-                whatever generic pages you can find online.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <div className="rounded-full bg-teal-100 p-1 mt-1">
-                    <Icons.check className="h-4 w-4 text-teal-600" />
-                  </div>
-                  <span className="text-gray-700">
-                    Create exactly what your kids are interested in <strong>right now</strong>
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="rounded-full bg-teal-100 p-1 mt-1">
-                    <Icons.check className="h-4 w-4 text-teal-600" />
-                  </div>
-                  <span className="text-gray-700">Match your classroom curriculum with custom educational pages</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="rounded-full bg-teal-100 p-1 mt-1">
-                    <Icons.check className="h-4 w-4 text-teal-600" />
-                  </div>
-                  <span className="text-gray-700">Generate multiple variations to keep kids engaged longer</span>
-                </li>
-              </ul>
-              <div className="pt-4">
-                <Link href="/sign-up" passHref>
-                  <Button size="lg" className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm">
-                    Try It Now — It's Free
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
+{/* Text to Coloring Page Feature - Modern Redesign */}
+<section className="w-full py-24 md:py-32 overflow-hidden relative">
+  {/* Background elements */}
+  <div className="absolute inset-0 bg-gradient-to-br from-white via-gray-50 to-gray-100 -z-10"></div>
+  <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-b from-pastel-pink/10 to-transparent rounded-full blur-3xl -z-10"></div>
+  <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-gradient-to-t from-pastel-purple/10 to-transparent rounded-full blur-3xl -z-10"></div>
+  
+  <div className="container px-4 md:px-6 relative">
+    {/* Main content container with offset grid */}
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-16 lg:gap-x-16 items-center">
+      
+      {/* Left content area */}
+      <div className="lg:col-span-5 lg:col-start-1 z-10">
+        {/* Feature label */}
+        <div className="inline-flex items-center mb-6 bg-white py-1 px-4 rounded-full shadow-sm border border-gray-100">
+          <div className="w-3 h-3 rounded-full bg-gradient-to-r from-pastel-pink to-pastel-purple mr-2"></div>
+          <span className="text-sm font-medium bg-gradient-to-r from-pastel-pink to-pastel-purple bg-clip-text text-transparent">
+            Text to Coloring Page
+          </span>
+        </div>
+        
+        {/* Main heading with gradient underline */}
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 leading-tight">
+          Your imagination, <br />instantly illustrated
+        </h2>
+        <div className="h-1 w-16 bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-full mb-8"></div>
+        
+        {/* Description with larger text */}
+        <p className="text-xl text-gray-700 mb-10 leading-relaxed">
+          "I need a dinosaur playing soccer" — and just like that, it's ready to print. No more compromising with whatever generic pages you can find online.
+        </p>
+        
+        {/* Feature list with modern styling */}
+        <div className="space-y-6 mb-10">
+          <div className="flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center border border-gray-100">
+                <Check className="h-4 w-4 text-primary" />
               </div>
             </div>
-            <div className="relative">
-              <div className="relative rounded-xl overflow-hidden shadow-xl bg-white">
-                <div className="aspect-square">
-                  <img
-                    src="/text-to-coloring-demo.png"
-                    alt="Text to coloring page example"
-                    className="object-cover w-full h-full"
-                  />
+            <div>
+              <h4 className="text-lg font-semibold mb-1">Personalized creativity</h4>
+              <p className="text-gray-600">Create exactly what your kids are interested in <strong>right now</strong></p>
+            </div>
+          </div>
+          
+          <div className="flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center border border-gray-100">
+                <BookOpen className="h-4 w-4 text-primary" />
+              </div>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-1">Educational alignment</h4>
+              <p className="text-gray-600">Match your classroom curriculum with custom educational pages</p>
+            </div>
+          </div>
+          
+          <div className="flex items-start">
+            <div className="flex-shrink-0 mr-4">
+              <div className="w-8 h-8 rounded-lg bg-white shadow-sm flex items-center justify-center border border-gray-100">
+                <Layers className="h-4 w-4 text-primary" />
+              </div>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-1">Endless variations</h4>
+              <p className="text-gray-600">Generate multiple designs to keep kids engaged longer</p>
+            </div>
+          </div>
+        </div>
+        
+        {/* CTA with floating elements */}
+        <div className="relative">
+          <Link href="/sign-up" passHref>
+            <Button size="lg" className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm px-8 py-6 h-auto text-base shadow-lg">
+              Try it now — it's free
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+          <div className="absolute -right-4 -bottom-4 w-20 h-20 bg-gray-50 rounded-full -z-10"></div>
+        </div>
+      </div>
+      
+      {/* Right content area - Interactive demo */}
+      <div className="lg:col-span-7 lg:col-start-6">
+        <div className="relative">
+          {/* Main image with floating UI elements */}
+          <div className="rounded-xl overflow-hidden shadow-2xl bg-white relative z-10">
+            {/* Demo image */}
+            <div className="aspect-[4/3]">
+              <img
+                src="/text-to-coloring-demo.png"
+                alt="Text to coloring page example"
+                className="object-cover w-full h-full"
+              />
+            </div>
+            
+            {/* Floating prompt input */}
+            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-5/6 bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-3 border border-gray-200">
+              <div className="flex items-center">
+                <div className="flex-1 bg-gray-100 rounded-md px-4 py-2 text-sm text-gray-600">
+                  "A dinosaur playing soccer with friends"
                 </div>
-
-                {/* Process steps overlay */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                  <div className="flex justify-between text-white">
-                    <div className="text-center">
-                      <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-2">
-                        <span className="text-sm font-bold">1</span>
-                      </div>
-                      <p className="text-xs">Type prompt</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-2">
-                        <span className="text-sm font-bold">2</span>
-                      </div>
-                      <p className="text-xs">AI generates</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-2">
-                        <span className="text-sm font-bold">3</span>
-                      </div>
-                      <p className="text-xs">Print & color</p>
-                    </div>
+                <div className="ml-2 w-8 h-8 rounded-md bg-gradient-to-r from-pastel-pink to-pastel-purple flex items-center justify-center text-white">
+                  <ArrowRight className="h-4 w-4" />
+                </div>
+              </div>
+            </div>
+            
+            {/* Process steps with modern styling */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent backdrop-blur-sm p-8">
+              <div className="flex justify-between items-center">
+                <div className="relative">
+                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-2 backdrop-blur-sm">
+                    <span className="text-white font-bold">1</span>
                   </div>
+                  <div className="absolute h-0.5 w-16 bg-white/30 top-5 left-10"></div>
+                  <p className="text-white text-sm font-medium">Describe</p>
+                </div>
+                
+                <div className="relative">
+                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-2 backdrop-blur-sm">
+                    <span className="text-white font-bold">2</span>
+                  </div>
+                  <div className="absolute h-0.5 w-16 bg-white/30 top-5 left-10"></div>
+                  <p className="text-white text-sm font-medium">Generate</p>
+                </div>
+                
+                <div>
+                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mb-2 backdrop-blur-sm">
+                    <span className="text-white font-bold">3</span>
+                  </div>
+                  <p className="text-white text-sm font-medium">Print & Color</p>
                 </div>
               </div>
             </div>
           </div>
+          
+          {/* Decorative elements */}
+          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-pastel-pink to-pastel-purple rounded-full opacity-20 blur-2xl -z-10"></div>
+          <div className="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-br from-pastel-blue to-pastel-green rounded-full opacity-20 blur-2xl -z-10"></div>
+          
+          {/* Floating result examples */}
+          <div className="absolute -bottom-10 -right-5 w-28 h-28 bg-white rounded-lg shadow-lg overflow-hidden border-4 border-white rotate-6 z-20">
+            <img
+              src="/placeholder.svg?height=100&width=100&text=Dinosaur+Coloring"
+              alt="Sample coloring result"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          
+          <div className="absolute -top-8 -left-5 w-24 h-24 bg-white rounded-lg shadow-lg overflow-hidden border-4 border-white -rotate-6 z-20">
+            <img
+              src="/placeholder.svg?height=100&width=100&text=Soccer+Coloring"
+              alt="Sample coloring result"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Image to Coloring Page Feature - Enhanced */}
       <section className="w-full py-16 md:py-24 bg-white overflow-hidden">
@@ -669,7 +751,7 @@ export function MarketingPageClient() {
     {/* Modern asymmetrical layout */}
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-y-16 lg:gap-x-12">
       {/* Left column - For Parents */}
-      <div className="lg:col-span-5 lg:sticky lg:top-24 self-start">
+      <div className="lg:col-span-5  lg:top-24 self-start">
         <div className="relative">
           {/* Decorative element */}
           <div className="absolute -left-4 top-0 h-full w-1 bg-gradient-to-b from-pastel-pink to-pastel-purple"></div>
@@ -786,10 +868,10 @@ export function MarketingPageClient() {
       </div>
       
       {/* Right column - For Teachers */}
-      <div className="lg:col-span-5 order-1 lg:order-2 lg:sticky lg:top-24 self-start">
+      <div className="lg:col-span-5 order-1 lg:order-2 lg:top-24 self-start">
         <div className="relative">
           {/* Decorative element */}
-          <div className="absolute -left-4 top-0 h-full w-1 bg-gradient-to-b from-pastel-green to-pastel-blue"></div>
+          <div className="absolute -left-4 top-0 h-full w-1 bg-gradient-to-b from-pastel-pink to-pastel-purple"></div>
           
           <div className="pl-6">
             <div className="text-sm uppercase tracking-wider text-primary font-medium mb-4">For Teachers</div>
