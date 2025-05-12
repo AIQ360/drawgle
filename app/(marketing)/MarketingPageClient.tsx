@@ -546,7 +546,7 @@ export function MarketingPageClient() {
       </section>
 
       {/* How It Works Section - Simplified */}
-      <section className="w-full py-16 md:py-24 bg-white">
+      <section className="w-full py-16 md:py-24 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="inline-flex items-center px-3 py-1 text-sm font-medium text-indigo-700 bg-indigo-50 rounded-full">
@@ -655,7 +655,7 @@ export function MarketingPageClient() {
       </section>
 
 {/* Use Cases Section - Modern Redesign */}
-<section className="w-full py-24 md:py-32 bg-white">
+<section className="w-full py-24 md:py-32 bg-gray-50">
   <div className="container px-4 md:px-6">
     {/* Section header with minimal styling */}
     <div className="max-w-3xl mx-auto mb-20">
