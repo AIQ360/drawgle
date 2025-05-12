@@ -7,7 +7,7 @@ import { SUBSCRIPTION_PLANS } from "@/lib/subscription-plans"
 import { Icons } from "@/components/icons"
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, BookOpen, Check Clock, Calendar, Users, FileText, Layout, Layers, Palette, Pencil, Star, Zap, Globe } from "lucide-react"
+import { ArrowRight, BookOpen, Check, Clock, Calendar, Users, FileText, Layout, Layers, Palette, Pencil, Star, Zap, Globe } from "lucide-react"
 import { useState } from "react"
 
 export function MarketingPageClient() {
@@ -155,7 +155,7 @@ export function MarketingPageClient() {
       </section>
 
       {/* Why Parents & Teachers Love It Section */}
-      <section className="w-full py-16 md:py-24 bg-white">
+      <section className="w-full py-16 md:py-24 bg-gray-50">
         <div className="container px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Why Parents & Teachers Love It</h2>
@@ -205,7 +205,7 @@ export function MarketingPageClient() {
       </section>
 
       {/* Coloring Book Generator Section */}
-      <section className="w-full py-16 md:py-24 bg-gradient-to-b from-blue-50 to-purple-50">
+      <section className="w-full py-16 md:py-24 bg-white">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <Badge variant="outline" className="bg-primary/10 text-primary border-0 px-3 py-1">
