@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function KidsColoringPages() {
   return (
-    <div>
+    <div className="container mx-auto px-4 py-8">
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground mb-6">
         <ol className="flex items-center space-x-2">

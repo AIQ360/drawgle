@@ -123,7 +123,7 @@ export function MarketingPageClient() {
 
             {/* Pencil character positioned at corner */}
             <div className="absolute -top-12 -right-8 transform rotate-45">
-              <div className="pencil-character" style={{ transform: "scale(0.6)" }}>
+              <div className="pencil-character" style={{ transform: "scale(0.4)" }}>
                 <div className="pencil-body"></div>
                 <div className="pencil-face">
                   <div className="pencil-eye left"></div>
@@ -276,7 +276,7 @@ export function MarketingPageClient() {
 
               <div className="pt-4">
                 <Link href="/sign-up" passHref>
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full">
+                  <Button size="lg" className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm text-white">
                     Create Your First Book
                     <BookOpen className="ml-2 h-4 w-4" />
                   </Button>
@@ -364,7 +364,7 @@ export function MarketingPageClient() {
               </ul>
               <div className="pt-4">
                 <Link href="/sign-up" passHref>
-                  <Button size="lg" className="bg-teal-500 hover:bg-teal-600 rounded-full">
+                  <Button size="lg" className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm">
                     Try It Now — It's Free
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -535,7 +535,7 @@ export function MarketingPageClient() {
               </ul>
               <div className="pt-4">
                 <Link href="/sign-up" passHref>
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
+                  <Button size="lg" className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm">
                     Transform Your Photos Now
                   </Button>
                 </Link>
@@ -721,7 +721,7 @@ export function MarketingPageClient() {
 
               <div className="bg-gray-50 p-6 border-t">
                 <Link href="/sign-up" passHref>
-                  <Button className="w-full">Start Creating for Your Kids</Button>
+                  <Button className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm">Start Creating for Your Kids</Button>
                 </Link>
               </div>
             </div>
@@ -780,7 +780,7 @@ export function MarketingPageClient() {
 
               <div className="bg-gray-50 p-6 border-t">
                 <Link href="/sign-up" passHref>
-                  <Button className="w-full">Create for Your Classroom</Button>
+                  <Button className="bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm">Create for Your Classroom</Button>
                 </Link>
               </div>
             </div>
@@ -879,7 +879,7 @@ export function MarketingPageClient() {
                     <Button
                       className={cn(
                         "w-full",
-                        id === "starter" ? "bg-primary hover:bg-primary/90" : "bg-gray-900 hover:bg-gray-800",
+                        id === "starter" ? "bg-gradient-to-r from-pastel-pink to-pastel-purple rounded-sm" : "bg-gray-900 hover:bg-gray-800",
                       )}
                     >
                       Get Started
