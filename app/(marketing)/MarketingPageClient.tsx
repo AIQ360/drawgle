@@ -88,7 +88,7 @@ export function MarketingPageClient() {
             <Link href="/sign-up">
               <Button
                 size="md"
-                className="bg-gradient-to-r from-pink-500 to-orange-400 hover:from-pink-600 hover:to-orange-500 rounded-full text-lg px-4 py-4 h-auto font-bold shadow-xl"
+                className="bg-gradient-to-r from-pink-500 to-orange-400 hover:from-pink-600 hover:to-orange-500 rounded-md text-lg px-3 py-3 h-auto font-bold shadow-xl"
               >
                 Create Your FREE Magic Page!
                 <Star className="ml-2 h-5 w-5 star-spin" />
@@ -103,7 +103,7 @@ export function MarketingPageClient() {
                 {["Unicorn", "Dinosaur", "Spaceship", "Princess", "Dragon", "Robot", "Mermaid", "Superhero"].map(
                   (item, i) => (
                     <div key={i} className="example-item">
-                      <div className="h-24 md:h-32 bg-gray-100 rounded-lg overflow-hidden">
+                      <div className="h-28 md:h-36 bg-gray-100 rounded-lg overflow-hidden border">
                         <img
                           src={imageMap[item] || "/placeholder.svg"}
                           alt={`${item} coloring page`}
