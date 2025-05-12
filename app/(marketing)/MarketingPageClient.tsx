@@ -19,13 +19,13 @@ export function MarketingPageClient() {
   // Add this before the return statement in MarketingPageClient
   const imageMap = {
     "Unicorn": "https://rhcmqpuqozvwyrffixnx.supabase.co/storage/v1/object/public/coloring-pages/private/cae7654d-bd38-46fc-b82d-c50fa5402535-1747041104711-0-a_unicorn.png",
-    "Dinosaur": "/placeholder.svg?height=200&width=200&text=Dinosaur",
-    "Spaceship": "/placeholder.svg?height=200&width=200&text=Spaceship",
-    "Princess": "/placeholder.svg?height=200&width=200&text=Princess",
-    "Dragon": "/placeholder.svg?height=200&width=200&text=Dragon",
-    "Robot": "/placeholder.svg?height=200&width=200&text=Robot",
-    "Mermaid": "/placeholder.svg?height=200&width=200&text=Mermaid",
-    "Superhero": "/placeholder.svg?height=200&width=200&text=Superhero"
+    "Dinosaur": "https://rhcmqpuqozvwyrffixnx.supabase.co/storage/v1/object/public/coloring-pages/private/cae7654d-bd38-46fc-b82d-c50fa5402535-1747041118433-0-a_Dinosaur.png",
+    "Spaceship": "https://rhcmqpuqozvwyrffixnx.supabase.co/storage/v1/object/public/coloring-pages/private/cae7654d-bd38-46fc-b82d-c50fa5402535-1747041139347-0-a_Spaceship_outline.png",
+    "Princess": "https://rhcmqpuqozvwyrffixnx.supabase.co/storage/v1/object/public/coloring-pages/private/cae7654d-bd38-46fc-b82d-c50fa5402535-1747041153427-0-a_Princess_outline.png",
+    "Dragon": "https://rhcmqpuqozvwyrffixnx.supabase.co/storage/v1/object/public/coloring-pages/private/cae7654d-bd38-46fc-b82d-c50fa5402535-1747041165271-0-a_Dragon_outline.png",
+    "Robot": "https://rhcmqpuqozvwyrffixnx.supabase.co/storage/v1/object/public/coloring-pages/private/cae7654d-bd38-46fc-b82d-c50fa5402535-1747041177671-0-a_Robot_outline.png",
+    "Mermaid": "https://rhcmqpuqozvwyrffixnx.supabase.co/storage/v1/object/public/coloring-pages/private/cae7654d-bd38-46fc-b82d-c50fa5402535-1747041191299-0-a_Mermaid_outline.png",
+    "Superhero": "https://rhcmqpuqozvwyrffixnx.supabase.co/storage/v1/object/public/coloring-pages/private/cae7654d-bd38-46fc-b82d-c50fa5402535-1747041205122-0-a_Superhero_boy.png"
   };
 
   return (
