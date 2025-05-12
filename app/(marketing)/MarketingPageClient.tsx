@@ -16,6 +16,18 @@ export function MarketingPageClient() {
   // Exchange rate (approximate)
   const exchangeRate = 83
 
+  // Add this before the return statement in MarketingPageClient
+  const imageMap = {
+    "Unicorn": "https://rhcmqpuqozvwyrffixnx.supabase.co/storage/v1/object/public/coloring-pages/private/cae7654d-bd38-46fc-b82d-c50fa5402535-1747041104711-0-a_unicorn.png",
+    "Dinosaur": "/placeholder.svg?height=200&width=200&text=Dinosaur",
+    "Spaceship": "/placeholder.svg?height=200&width=200&text=Spaceship",
+    "Princess": "/placeholder.svg?height=200&width=200&text=Princess",
+    "Dragon": "/placeholder.svg?height=200&width=200&text=Dragon",
+    "Robot": "/placeholder.svg?height=200&width=200&text=Robot",
+    "Mermaid": "/placeholder.svg?height=200&width=200&text=Mermaid",
+    "Superhero": "/placeholder.svg?height=200&width=200&text=Superhero"
+  };
+
   return (
     <>
       <section className="relative overflow-hidden py-16 md:py-24">
@@ -84,7 +96,7 @@ export function MarketingPageClient() {
             </Link>
           </div>
 
-          {/* Animated example showcase */}
+             {/* Animated example showcase */}
           <div className="relative max-w-4xl mx-auto">
             <div className="example-showcase p-2 bg-white rounded-2xl shadow-rainbow overflow-hidden">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
@@ -93,7 +105,7 @@ export function MarketingPageClient() {
                     <div key={i} className="example-item">
                       <div className="h-24 md:h-32 bg-gray-100 rounded-lg overflow-hidden">
                         <img
-                          src={`/placeholder.svg?height=40&width=40text=${item}`}
+                          src={imageMap[item] || "/placeholder.svg"}
                           alt={`${item} coloring page`}
                           className="w-full h-full object-cover"
                         />
