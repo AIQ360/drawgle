@@ -297,15 +297,15 @@
 /* Pencil character */
 .pencil-character {
   position: relative;
-  width: 100px;
-  height: 150px;
+  width: 80px;
+  height: 120px;
   animation: pencil-bounce 3s ease-in-out infinite;
 }
 
 .pencil-body {
   position: absolute;
-  width: 30px;
-  height: 120px;
+  width: 20px;
+  height: 90px;
   background: linear-gradient(to bottom, #ffd700 0%, #ffd700 20%, #3498db 20%, #3498db 90%, #e74c3c 90%, #e74c3c 100%);
   border-radius: 5px;
   left: 50%;
@@ -327,8 +327,8 @@
 
 .pencil-face {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: #ffd700;
   border-radius: 50%;
   top: 0;
@@ -343,27 +343,27 @@
 
 .pencil-eye {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   background: #333;
   border-radius: 50%;
   top: 15px;
 }
 
 .pencil-eye.left {
-  left: 10px;
+  left: 8px;
   animation: blink 3s infinite;
 }
 
 .pencil-eye.right {
-  right: 10px;
+  right: 8px;
   animation: blink 3s infinite 0.1s;
 }
 
 .pencil-mouth {
   position: absolute;
-  width: 20px;
-  height: 10px;
+  width: 15px;
+  height: 7px;
   background: #333;
   border-radius: 0 0 10px 10px;
   bottom: 10px;
@@ -406,24 +406,7 @@
   }
 }
 
-/* Color palette dots */
-.color-dot {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: color-pop 2s infinite;
-}
 
-@keyframes color-pop {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
 
 /* CTA button */
 .cta-button {
@@ -506,21 +489,6 @@
   z-index: 10;
 }
 
-.magic-wand {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: wand-magic 3s infinite;
-}
-
-.wand-icon {
-  width: 40px;
-  height: 40px;
-  color: #9c27b0;
-  filter: drop-shadow(0 0 10px rgba(156, 39, 176, 0.8));
-}
-
 @keyframes wand-magic {
   0%,
   100% {
@@ -572,7 +540,7 @@
   display: inline-block;
   padding: 0 2rem;
   font-size: 1rem;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
@@ -583,9 +551,4 @@
   100% {
     transform: translateX(-100%);
   }
-}
-
-
-button{
-background-color: bg-gradient-to-r from-pastel-pink to-pastel-purple;
 }
